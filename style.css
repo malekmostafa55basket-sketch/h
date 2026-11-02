@@ -1,0 +1,236 @@
+/* Tidewrack website - style file */
+
+/* basic settings for the whole page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #f5f8f7;
+  color: #0e2533;
+}
+
+/* this box keeps the content in the middle */
+.box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 0 0 15px 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+/* ----- top bar ----- */
+header {
+  background-color: #dceBe8;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 26px;
+}
+
+nav a {
+  color: #0e2533;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ----- hero ----- */
+.hero {
+  background-color: #dceBe8;
+}
+
+.top-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 2 1 350px;
+}
+
+.next {
+  flex: 1 1 260px;
+  background-color: white;
+  border: 2px solid #0e2533;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.big {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* orange button, like the vests of the volunteers */
+.button,
+button {
+  display: inline-block;
+  background-color: #ff5b1f;
+  color: #0e2533;
+  border: 2px solid #0e2533;
+  border-radius: 5px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+  background-color: #ff7440;
+}
+
+/* ----- table ----- */
+table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #b5d0cb;
+}
+
+th {
+  border-bottom: 2px solid #0e2533;
+}
+
+/* ----- steps ----- */
+.gray {
+  background-color: #e9f1ef;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.step {
+  flex: 1 1 250px;
+  border-left: 4px solid #1b6b73;
+  padding-left: 15px;
+}
+
+/* ----- lists ----- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+/* ----- colored sections ----- */
+.blue-light {
+  background-color: #dceBe8;
+}
+
+.dark-blue {
+  background-color: #1b6b73;
+  color: white;
+}
+
+/* ----- forms ----- */
+form {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+label.inline {
+  display: inline;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #0e2533;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 25px;
+}
+
+/* ----- footer ----- */
+footer {
+  background-color: #0e2533;
+  color: #dceBe8;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* on phones the title should be smaller */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}

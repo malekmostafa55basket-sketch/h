@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tidewrack - Cleaning the environment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- top bar -->
+  <header>
+    <h2 class="logo">Tidewrack</h2>
+    <nav>
+      <a href="#found">What we found</a>
+      <a href="#how">How it works</a>
+      <a href="#cleanups">Cleanups</a>
+      <a href="#join">Join</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </header>
+
+  <!-- first section -->
+  <section class="hero">
+    <div class="box top-part">
+      <div class="hero-text">
+        <h1>Pick up what the tide leaves behind.</h1>
+        <p>Tidewrack is a group of volunteers that cleans beaches, rivers and parks every weekend. We sort everything we collect and send it to be recycled.</p>
+      </div>
+
+      <div class="next">
+        <h3>Next cleanup</h3>
+        <p class="big">Saturday 7 November, 8:00 am</p>
+        <p>North Shore Beach. Meet at the lifeguard hut.</p>
+        <p>34 places left. Bring gloves and water. We give you bags and litter pickers.</p>
+        <a class="button" href="#join">Join this cleanup</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- table of things we found -->
+  <section id="found">
+    <div class="box">
+      <h2>What we found in October</h2>
+      <p>Volunteers count every item before we sort it. These numbers show us what people throw on the shore.</p>
+
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Collected</th>
+        </tr>
+        <tr>
+          <td>Cigarette butts</td>
+          <td>5,921</td>
+        </tr>
+        <tr>
+          <td>Bottle caps</td>
+          <td>2,306</td>
+        </tr>
+        <tr>
+          <td>Food wrappers</td>
+          <td>1,497</td>
+        </tr>
+        <tr>
+          <td>Plastic bottles</td>
+          <td>1,184</td>
+        </tr>
+        <tr>
+          <td>Glass pieces</td>
+          <td>438</td>
+        </tr>
+        <tr>
+          <td>Fishing line</td>
+          <td>212 m</td>
+        </tr>
+        <tr>
+          <td>Flip-flops</td>
+          <td>87</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3 steps -->
+  <section id="how" class="gray">
+    <div class="box">
+      <h2>How a cleanup works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Collect</h3>
+          <p>Teams of ten people walk along one part of the shore with bags and litter pickers. A team leader takes care of sharp or dangerous things.</p>
+        </div>
+        <div class="step">
+          <h3>2. Sort and count</h3>
+          <p>We put everything in groups: recycling, reuse and trash. Then we count it before we go home.</p>
+        </div>
+        <div class="step">
+          <h3>3. Hand it over</h3>
+          <p>The sorted things go to recycling companies. We also send our numbers to the city.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- list of next cleanups -->
+  <section id="cleanups">
+    <div class="box">
+      <h2>Upcoming cleanups</h2>
+      <ul>
+        <li><b>Sat 7 Nov, 8:00 am</b> - eltagamo3</li>
+        <li><b>Sun 15 Nov, 9:00 am</b> - elsheikh zayed</li>
+        <li><b>Sat 21 Nov, 8:30 am</b> - marasi</li>
+        <li><b>Sat 5 Dec, 8:00 am</b> - hurgada </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- sign up form -->
+  <section id="join" class="blue-light">
+    <div class="box">
+      <h2>Save your place</h2>
+      <p>You don't need any experience. A cleanup takes about three hours.</p>
+
+      <!-- this form does not send anything yet, it needs a backend -->
+      <form action="#" method="get">
+        <label>Full name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Which cleanup?</label>
+        <select name="cleanup">
+          <option>Sat 7 Nov - North Shore Beach</option>
+          <option>Sun 15 Nov - Millrace river path</option>
+          <option>Sat 21 Nov - Eastfield Park</option>
+          <option>Sat 5 Dec - Harbour wall</option>
+        </select>
+
+        <label>How many people?</label>
+        <input type="number" name="people" min="1" max="10" value="1">
+
+        <button type="submit">Save my place</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- donations -->
+  <section id="donate" class="dark-blue">
+    <div class="box">
+      <h2>What your donation pays for</h2>
+      <ul>
+        <li><b>$10</b> - gloves and bags for 5 volunteers</li>
+        <li><b>$25</b> - litter pickers and a first-aid kit for one cleanup</li>
+        <li><b>$60</b> - a truck to take sorted recycling to the plant</li>
+      </ul>
+
+      <form action="#" method="get">
+        <label>Choose an amount</label>
+        <input type="radio" name="amount" value="10" id="a10"> <label for="a10" class="inline">$10</label>
+        <input type="radio" name="amount" value="25" id="a25" checked> <label for="a25" class="inline">$25</label>
+        <input type="radio" name="amount" value="60" id="a60"> <label for="a60" class="inline">$60</label>
+
+        <label>Email for your receipt</label>
+        <input type="email" name="receipt" required>
+
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- bottom of the page -->
+  <footer>
+    <p><b>Tidewrack</b> - volunteers cleaning shores, rivers and parks.</p>
+    <p>Email: hello@tidewrack.example</p>
+  </footer>
+
+</body>
+</html>
